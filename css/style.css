@@ -2,6 +2,7 @@
  * style.css
  * Główny arkusz stylów dla strony CyberSecurity Insights
  * Styl oparty na Fluent Design System z elementami Blur i Glow
+ * Zaktualizowany o style dla formularza kontaktowego
  */
 
 
@@ -576,6 +577,107 @@ footer .container {
 
 .dark-mode .social-media a:hover {
     color: var(--primary-dark);
+}
+
+
+/* --- FORMULARZ KONTAKTOWY --- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-light);
+    background-color: var(--card-bg-light);
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    border: 1px solid var(--border-dark);
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: var(--glow-effect);
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+    border-color: var(--primary-dark);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error-message {
+    color: #d13438;
+    font-size: 0.9rem;
+    margin-top: var(--spacing-sm);
+    min-height: 1.2rem;
+    /* Zapewnia miejsce na komunikat */
+}
+
+
+/* --- TABELA --- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+table th,
+table td {
+    padding: var(--spacing-sm);
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.dark-mode table th,
+.dark-mode table td {
+    border-bottom: 1px solid var(--border-dark);
+}
+
+table th {
+    background-color: var(--primary-light);
+    color: white;
+    font-weight: 600;
+}
+
+.dark-mode table th {
+    background-color: var(--primary-dark);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dark-mode table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 

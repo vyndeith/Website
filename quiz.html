@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - CyberSecurity Insights</title>
+    <title>Quiz - CyberSecurity Insights</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/main.js" defer></script>
-    <script src="js/form.js" defer></script>
+    <script src="js/quiz.js" defer></script>
 </head>
 
 <body class="light-mode">
@@ -23,8 +23,8 @@
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="pentesting.html">Pentesting</a></li>
                     <li><a href="reverse_engineering.html">Reverse Engineering</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                     <li>
                         <button id="theme-toggle" aria-label="Przełącz tryb jasny/ciemny">
                             <i class="fas fa-moon"></i>
@@ -38,41 +38,45 @@
     <!-- Sekcja hero -->
     <section class="hero">
         <div class="container">
-            <h2>Formularz kontaktowy</h2>
-            <p>Skontaktuj się z nami, aby dowiedzieć się więcej o cyberbezpieczeństwie!</p>
+            <h2>Quiz o Cyberbezpieczeństwie</h2>
+            <p>Sprawdź swoją wiedzę na temat Reverse Engineering, Pentestingu i Bug Bounty Hunting!</p>
         </div>
     </section>
 
-    <!-- Sekcja formularza -->
+    <!-- Sekcja quizu -->
     <section class="container">
         <div class="blur-section">
-            <h2 class="section-title">Napisz do nas</h2>
-            <form id="contact-form" novalidate>
-                <div class="form-group">
-                    <label for="name">Imię:</label>
-                    <input type="text" id="name" name="name" required>
-                    <span class="error-message" id="name-error"></span>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <span class="error-message" id="email-error"></span>
-                </div>
-                <div class="form-group">
-                    <label for="message">Wiadomość:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <span class="error-message" id="message-error"></span>
-                </div>
-                <button type="submit" class="btn">Wyślij</button>
-            </form>
-            <p id="form-success" style="display: none; color: green; text-align: center;">Wiadomość wysłana pomyślnie!</p>
+            <h2 class="section-title">Quiz</h2>
+            <div id="quiz-container">
+                <!-- Pytania i odpowiedzi generowane dynamicznie przez JavaScript -->
+            </div>
+            <div id="quiz-navigation">
+                <button id="prev-question" disabled>Poprzednie</button>
+                <button id="next-question">Następne</button>
+                <button id="submit-quiz" style="display: none;">Zakończ quiz</button>
+            </div>
+            <div id="quiz-result" style="display: none;">
+                <h3>Wynik quizu</h3>
+                <p id="score"></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pytanie</th>
+                            <th>Twoja odpowiedź</th>
+                            <th>Poprawna odpowiedź</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-table"></tbody>
+                </table>
+            </div>
         </div>
     </section>
 
     <!-- Stopka -->
     <footer>
         <div class="container">
-            <p>© 2025 CyberSecurity Insights. Wszystkie prawa zastrzeżone.</p>
+            <p>&copy; 2025 CyberSecurity Insights. Wszystkie prawa zastrzeżone.</p>
             <div class="social-media">
                 <a href="https://github.com/vyndeith" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>

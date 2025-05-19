@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Engineering - CyberSecurity Insights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="light-mode">
+    <!-- Nagłówek strony -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CyberSecurity Insights</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="pentesting.html">Pentesting</a></li>
+                    <li><a href="reverse_engineering.html" class="active">Reverse Engineering</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Przełącz tryb jasny/ciemny">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sekcja hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>Reverse Engineering</h2>
+            <p>Rozkładanie oprogramowania na części pierwsze w celu zrozumienia jego działania i odkrycia luk.</p>
+        </div>
+    </section>
+
+    <!-- Sekcja wprowadzenia -->
+    <section class="container">
+        <div class="blur-section">
+            <h2 class="section-title">Czym jest Reverse Engineering?</h2>
+            <div class="intro-cards">
+                <div class="card glow">
+                    <i class="fas fa-code card-icon"></i>
+                    <h3>Analiza kodu</h3>
+                    <p>Deasemblacja i debugowanie kodu binarnego w celu zrozumienia jego logiki.</p>
+                    <a href="#tools" class="btn">Dowiedz się więcej</a>
+                </div>
+                <div class="card glow">
+                    <i class="fas fa-shield-alt card-icon"></i>
+                    <h3>Wykrywanie luk</h3>
+                    <p>Identyfikacja podatności w oprogramowaniu poprzez analizę jego struktury.</p>
+                    <a href="#techniques" class="btn">Dowiedz się więcej</a>
+                </div>
+                <div class="card glow">
+                    <i class="fas fa-cogs card-icon"></i>
+                    <h3>Tworzenie exploitów</h3>
+                    <p>Budowanie narzędzi do testowania zabezpieczeń na podstawie odkrytych luk.</p>
+                    <a href="#use-cases" class="btn">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja narzędzi -->
+    <section class="container" id="tools">
+        <div class="blur-section">
+            <h2 class="section-title">Narzędzia Reverse Engineering</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Narzędzie</th>
+                        <th>Opis</th>
+                        <th>Typ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ghidra</td>
+                        <td>Open-source'owy framework do analizy kodu binarnego.</td>
+                        <td>Deasembler/Analizator</td>
+                    </tr>
+                    <tr>
+                        <td>IDA Pro</td>
+                        <td>Zaawansowane narzędzie do deasemblacji i debugowania.</td>
+                        <td>Deasembler/Debuger</td>
+                    </tr>
+                    <tr>
+                        <td>Radare2</td>
+                        <td>Wszechstronne narzędzie open-source do analizy binarnej.</td>
+                        <td>Deasembler/Analizator</td>
+                    </tr>
+                    <tr>
+                        <td>OllyDbg</td>
+                        <td>Debugger dla aplikacji Windows.</td>
+                        <td>Debuger</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sekcja technik -->
+    <section class="container" id="techniques">
+        <div class="blur-section">
+            <h2 class="section-title">Techniki Reverse Engineering</h2>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Deasemblacja</h3>
+                    <i class="fas fa-plus accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Konwersja kodu maszynowego na język asemblera w celu analizy jego struktury.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Debugowanie</h3>
+                    <i class="fas fa-plus accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Śledzenie wykonania programu w celu zrozumienia jego zachowania.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Analiza dynamiczna</h3>
+                    <i class="fas fa-plus accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Obserwacja programu podczas jego działania w kontrolowanym środowisku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja materiałów -->
+    <section class="container">
+        <div class="blur-section">
+            <h2 class="section-title">Polecane materiały</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gh2RXE9BIN8?si=8uDfjAfRdQr0qx_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-description">Wprowadzenie do Reverse Engineering z praktycznymi przykładami.</p>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CyberSecurity Insights. Wszystkie prawa zastrzeżone.</p>
+            <div class="social-media">
+                <a href="https://github.com/vyndeith" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
