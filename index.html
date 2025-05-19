@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity Insights | Strona główna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CyberSecurity Insights</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Strona główna</a></li>
+                    <li><a href="pentesting.html">Pentesting</a></li>
+                    <li><a href="reverse-engineering.html">Reverse Engineering</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Przełącz tryb jasny/ciemny">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Moje zainteresowania w świecie cyberbezpieczeństwa</h2>
+            <p>Odkryj fascynujący świat Reverse Engineering, Pentestingu i Bug Bounty Hunting</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="container">
+            <div class="intro-cards">
+                <!-- Karta Reverse Engineering -->
+                <div class="card glow">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Reverse Engineering</h3>
+                    <p>Sztuka rozkładania oprogramowania na części pierwsze, by zrozumieć jego działanie, odkryć luki w zabezpieczeniach i odtworzyć logikę biznesową.</p>
+                    <a href="reverse-engineering.html" class="btn">Dowiedz się więcej</a>
+                </div>
+
+                <!-- Karta Pentesting -->
+                <div class="card glow">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Pentesting</h3>
+                    <p>Testowanie zabezpieczeń systemów informatycznych poprzez symulowanie ataków hakerskich w celu wykrycia luk bezpieczeństwa przed ich wykorzystaniem.</p>
+                    <a href="pentesting.html" class="btn">Dowiedz się więcej</a>
+                </div>
+
+                <!-- Karta Bug Bounty -->
+                <div class="card glow">
+                    <div class="card-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Bug Bounty Hunting</h3>
+                    <p>Poszukiwanie luk w zabezpieczeniach aplikacji i stron internetowych firm oferujących nagrody za zgłaszanie podatności.</p>
+                    <a href="pentesting.html#bug-bounty" class="btn">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja z akordeonem -->
+        <section class="container blur-section">
+            <h2 class="section-title">Podstawy cyberbezpieczeństwa</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Czym jest cyberbezpieczeństwo?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Cyberbezpieczeństwo to zespół działań, procesów i technologii mających na celu ochronę systemów komputerowych, sieci, programów i danych przed nieautoryzowanym dostępem, atakami czy uszkodzeniami. W dzisiejszym cyfrowym świecie,
+                            gdzie większość informacji jest przechowywana elektronicznie, cyberbezpieczeństwo stało się kluczowym elementem każdej organizacji.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Najczęstsze zagrożenia</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Wśród najczęstszych zagrożeń cyberbezpieczeństwa znajdują się:</p>
+                        <ul>
+                            <li>Malware - złośliwe oprogramowanie</li>
+                            <li>Phishing - wyłudzanie danych</li>
+                            <li>Ataki DDoS - odmowa usługi</li>
+                            <li>SQL Injection - wstrzykiwanie złośliwego kodu SQL</li>
+                            <li>Man-in-the-middle - przechwytywanie komunikacji</li>
+                            <li>Zero-day exploity - wykorzystywanie nieznanych luk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Etyka w cyberbezpieczeństwie</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Etyka w cyberbezpieczeństwie to zbiór zasad moralnych, które określają odpowiedzialne zachowanie specjalistów ds. bezpieczeństwa. Najważniejsze zasady to:</p>
+                        <ul>
+                            <li>Zasada pozwolenia - nigdy nie testuj systemów bez wyraźnej zgody</li>
+                            <li>Zasada poufności - informacje o lukach nie powinny być publicznie udostępniane przed naprawą</li>
+                            <li>Zasada minimalnej inwazyjności - używaj tylko tych technik, które są niezbędne do testowania</li>
+                            <li>Zasada odpowiedzialnej ujawnienia - informuj właścicieli systemów o znalezionych lukach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja z YouTube -->
+        <section class="container">
+            <h2 class="section-title">Polecane materiały</h2>
+            <div class="video-container blur">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ULGILG-ZhO0?si=hp-dk8yYGvXwO1Ua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-description">
+                Wprowadzenie do świata cyberbezpieczeństwa przedstawiające podstawowe koncepcje i wyzwania.
+            </p>
+        </section>
+
+        <!-- Galeria zdjęć -->
+        <section class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="images/cyber1.jpg" alt="Cyberbezpieczeństwo - wizualizacja">
+                </div>
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="images/cyber2.jpg" alt="Kod źródłowy">
+                </div>
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="images/cyber3.jpg" alt="Analiza bezpieczeństwa">
+                </div>
+                <div class="gallery-item" onclick="openModal(3)">
+                    <img src="images/cyber4.jpg" alt="Testowanie penetracyjne">
+                </div>
+                <div class="gallery-item" onclick="openModal(4)">
+                    <img src="images/cyber5.jpg" alt="Bug bounty">
+                </div>
+                <div class="gallery-item" onclick="openModal(5)">
+                    <img src="images/cyber6.jpg" alt="Reverse engineering">
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal do wyświetlania zdjęć -->
+        <div id="gallery-modal" class="modal">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div class="modal-caption" id="caption"></div>
+            <a class="modal-prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="modal-next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CyberSecurity Insights. Wszystkie prawa zastrzeżone.</p>
+            <div class="social-media">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
